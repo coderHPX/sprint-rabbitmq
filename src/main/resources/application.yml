@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rabbitmq
+
+  rabbitmq:
+    host: 192.168.78.137
+    port: 5672
+    username: hpx
+    password: hpx
+    virtual-host: hpx
+    listener.simple:
+      acknowledge-mode: manual   #  ÷∂Øack
+      concurrency: 1
+      max-concurrency: 10
+
